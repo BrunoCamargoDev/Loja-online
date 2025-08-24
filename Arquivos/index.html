@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camargo Multimarcas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- link via CDN -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="bg-light p-3 mb-4 border-bottom sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-0">Camargo Mulimarcas</h1>
+        <div class="d-flex align-items-center">
+            <div class="w-100 me-3">
+                <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar produtos...">
+            </div>
+            <button class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                Carrinho <span class="badge bg-danger rounded-pill" id="cartCount">0</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Seção Main -->
+<main class="container">
+    <div class="row">
+        <aside class="col-md-3 d-none d-md-block">
+            <div class="bg-light p-3 rounded mb-4">
+                <h5>Filtros</h5>
+                <hr>
+                <h6>Preço</h6>
+                <label for="priceRange" class="form-label">Filtrar por preço: R$<span id="priceValue">200</span></label>
+                <input type="range" class="form-range" min="10" max="200" value="200" id="priceRange">
+            </div>
+        </aside>
+
+        <section class="col-md-9">
+            <button class="btn btn-secondary d-md-none mb-3 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters">
+                Mostrar Filtros
+            </button>
+            <div class="collapse d-md-none" id="collapseFilters">
+                <div class="bg-light p-3 rounded mb-4">
+                    <h6>Preço</h6>
+                    <label for="priceRangeMobile" class="form-label">Filtrar por preço: R$<span id="priceValueMobile">200</span></label>
+                    <input type="range" class="form-range" min="10" max="200" value="200" id="priceRangeMobile">
+                </div>
+            </div>
+            <div class="row" id="productList">
+                </div>
+        </section>
+    </div>
+</main>
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Seu Carrinho</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems">
+                    <p class="text-center" id="emptyCartMessage">Seu carrinho está vazio.</p>
+                </div>
+            </div>
+            <div class="modal-footer d-block">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="mb-0">Total: <span id="cartTotal">R$0.00</span></h5>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Continuar Comprando</button>
+                </div>
+                <button type="button" class="btn btn-success w-100" id="finalizePurchaseBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Carrinho</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toastMessage">
+            </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- CND -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> <!-- CND -->
+<script src="scripts.js"></script> <!-- Arquivo -->
+
+</body>
+</html>

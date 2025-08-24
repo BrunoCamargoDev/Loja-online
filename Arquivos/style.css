@@ -1,0 +1,43 @@
+        /* Estilos CSS mantidos do código anterior */
+        .product-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .product-card h5 {
+            height: 48px;
+            overflow: hidden;
+            font-size: 1.1rem;
+        }
+        .product-card p {
+            height: 72px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.9rem;
+        }
+        .cart-item-image {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .cart-footer {
+            background-color: #f8f9fa;
+        }
+        /* Estilo para as estrelas de avaliação */
+        .rating-stars {
+            color: gold;
+        }
