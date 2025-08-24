@@ -3,7 +3,7 @@
 ## 📌 Sobre o Projeto
 Este projeto foi desenvolvido em sala de aula com o objetivo de praticar **HTML, CSS, JavaScript e Bootstrap**, simulando uma página de **e-commerce** com funcionalidades de listagem de produtos, carrinho de compras e finalização de pedido em PDF.
 
-⚠️ **Observação importante:**  
+⚠️ **Observações importantes:**  
 - As imagens referenciadas no código (`/img/...`) **não estão disponíveis neste repositório** devido a possíveis direitos autorais.  
 Para testar o projeto corretamente, utilize suas próprias imagens ou substitua os caminhos no arquivo `scripts.js`.
 - Código criado em conjunto com o apoio de nossos tutores.
