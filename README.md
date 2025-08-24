@@ -41,14 +41,14 @@ Para testar o projeto corretamente, utilize suas próprias imagens ou substitua 
 2. Abra o arquivo `index.html` diretamente no navegador. Não é necessário servidor local para rodar esse projeto.
 
 ## 📂 Estrutura de Arquivos
-    ```bash
+  ```bash
 📦 Loja-online
 ┣ 📂 arquivos/  # Pasta principal com os recursos do projeto
 ┃ ┣ 📜 index.html   # Página principal
 ┃ ┣ 📜 style.css    # Estilos customizados
 ┃ ┣ 📜 scripts.js   # Lógica de produtos, carrinho e PDF
 ┃ ┣ 📂 img/     # Pasta de imagens (não incluída no repositório, crie a sua!)
-    ```
+  ```
 
 ## 📚 Objetivo Educacional
 - Este projeto foi realizado como atividade prática para:
